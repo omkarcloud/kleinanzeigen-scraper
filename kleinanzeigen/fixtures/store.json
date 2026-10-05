@@ -1,0 +1,47 @@
+{
+ "id": "202135",
+ "userId": "158553607",
+ "title": "Holz , Naturstein & Historische Baustoffe",
+ "description": "Wood & Stones verbindet authentische Materialien mit zeitlosem Design. Wir bieten eine exklusive Auswahl an Holz, Naturstein und historischen Bauelementen für hochwertige Innenräume und Architekturprojekte.\n\nWas uns besonders macht, ist unsere direkte Importstruktur, unsere Leidenschaft für natürliche Materialien und unser Auge für Charakter und Qualität. Durch unsere großflächigen Einkäufe können wir einzigartige Produkte zu sehr wettbewerbsfähigen Preisen anbieten.\n\nVon Architekten und Innenausstattern bis hin zu Privatkunden – unsere Kunden schätzen die Kombination aus Authentizität, Fachwissen und persönlichem Service. In unserem Showroom in Enschede inspirieren wir täglich mit Materialien, die Atmosphäre, Wärme und Geschichte ausstrahlen.\n",
+ "urlExtension": "holz--naturstein--historische-baustoffe",
+ "logoUrl": "https://img.kleinanzeigen.de/api/v1/prod-user/images/d0/d0d69a6a-40d8-4ae8-8669-06abee6f03ba?rule=$_{imageId}.JPG",
+ "active": true,
+ "commercial": true,
+ "phoneNumber": "0031534317776",
+ "imprint": "Ter Weele Holzhandel und Abbruch BV\r\nLonnekerbrugstraat 107\r\n7547AL Enschede , Niederlande Standortangabe Ahaus (DE )\r\n0031-621216712\r\nwoodandstones99@icloud.com\r\nGeschäftsführer Herr ter Weele\r\n\r\nUSt-IdNr NL 854513814B01\r\nHRB / KVK Nummer 61845590",
+ "locationId": 1176,
+ "street": "Lonnekerbrugstraat 107",
+ "webUrl": "https://www.kleinanzeigen.de/pro/holz--naturstein--historische-baustoffe",
+ "zipCode": "48683",
+ "locationName": "Nordrhein-Westfalen - Ahaus",
+ "latitude": 52.2297,
+ "longitude": 6.849,
+ "userAccountType": "commercial_propremium",
+ "encryptedSellerId": "4304bd6132733358528422992ba25e98",
+ "openingHours": [
+  {
+   "days": "Mo - Fr:",
+   "hours": [
+    "09:00 - 17:30"
+   ]
+  },
+  {
+   "days": "Sa:",
+   "hours": [
+    "09:00 - 14:00"
+   ]
+  }
+ ],
+ "headerImageUrl": "https://img.kleinanzeigen.de/api/v1/prod-user/images/aa/aa60ffe0-4ec3-4872-9836-6fa84044844b?rule=$_{imageId}.JPG",
+ "imageUrls": [
+  "https://img.kleinanzeigen.de/api/v1/prod-user/images/5a/5af2c909-cedc-4b0d-b949-ca3120364fe7?rule=$_{imageId}.JPG",
+  "https://img.kleinanzeigen.de/api/v1/prod-user/images/16/1663b3e7-fb6b-4489-a33f-7c5ff2037681?rule=$_{imageId}.JPG"
+ ],
+ "summary": "Wood & Stones: Exklusive Holz-, Naturstein- und historische Baumaterialien für zeitlose Innenräume & Architektur.",
+ "usps": [
+  "Faire preise ",
+  "Gute Auswahl",
+  "Direkt ab Lager Lieferbar"
+ ],
+ "hasAdShowcase": false
+}

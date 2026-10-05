@@ -1,0 +1,204 @@
+{
+ "{http://www.ebayclassifiedsgroup.com/schema/category/v1}categories": {
+  "name": "{http://www.ebayclassifiedsgroup.com/schema/category/v1}categories",
+  "declaredType": "com.ebay.ecg.api.spec.v1.schema.category.Categories",
+  "scope": "jakarta.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+   "category": [
+    {
+     "id-name": {
+      "value": "Alle Kategorien"
+     },
+     "localized-name": {
+      "value": "Alle Kategorien"
+     },
+     "link": [],
+     "category": [
+      {
+       "id-name": {
+        "value": "Auto_Rad_Boot"
+       },
+       "localized-name": {
+        "value": "Auto, Rad & Boot"
+       },
+       "link": [],
+       "category": [
+        {
+         "id-name": {
+          "value": "Autos"
+         },
+         "localized-name": {
+          "value": "Autos"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "210"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "216"
+        },
+        {
+         "id-name": {
+          "value": "Autoteile_Reifen"
+         },
+         "localized-name": {
+          "value": "Autoteile & Reifen"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "210"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "223"
+        },
+        {
+         "id-name": {
+          "value": "Boote_Bootszubehoer"
+         },
+         "localized-name": {
+          "value": "Boote & Bootszubehör"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "210"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "211"
+        },
+        {
+         "id-name": {
+          "value": "Fahrraeder"
+         },
+         "localized-name": {
+          "value": "Fahrräder & Zubehör"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "210"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "217"
+        }
+       ],
+       "parent-id": {
+        "value": "0"
+       },
+       "has-fake-sub-category": {
+        "value": "false"
+       },
+       "id": "210"
+      },
+      {
+       "id-name": {
+        "value": "Immobilien"
+       },
+       "localized-name": {
+        "value": "Immobilien"
+       },
+       "link": [],
+       "category": [
+        {
+         "id-name": {
+          "value": "Auf_Zeit_WG"
+         },
+         "localized-name": {
+          "value": "Auf Zeit & WG"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "195"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "199"
+        },
+        {
+         "id-name": {
+          "value": "Container"
+         },
+         "localized-name": {
+          "value": "Container"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "195"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "402"
+        },
+        {
+         "id-name": {
+          "value": "Wohnung_kaufen"
+         },
+         "localized-name": {
+          "value": "Eigentumswohnungen"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "195"
+         },
+         "has-fake-sub-category": {
+          "value": "false"
+         },
+         "id": "196"
+        },
+        {
+         "id-name": {
+          "value": "Ferienwohnung_Ferienhaus"
+         },
+         "localized-name": {
+          "value": "Ferien- & Auslandsimmobilien"
+         },
+         "link": [],
+         "category": [],
+         "parent-id": {
+          "value": "195"
+         },
+         "has-fake-sub-category": {
+          "value": "true"
+         },
+         "id": "275"
+        }
+       ],
+       "parent-id": {
+        "value": "0"
+       },
+       "has-fake-sub-category": {
+        "value": "false"
+       },
+       "id": "195"
+      }
+     ],
+     "parent-id": {},
+     "has-fake-sub-category": {
+      "value": "false"
+     },
+     "id": "0"
+    }
+   ],
+   "version": "1.16",
+   "locale": "de_DE"
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": true
+ }
+}

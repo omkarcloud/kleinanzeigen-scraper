@@ -1,0 +1,449 @@
+{
+ "searchOptions": {
+  "q": "sofa",
+  "minPrice": 0,
+  "maxPrice": 0,
+  "size": 1,
+  "extension": {},
+  "attr": {},
+  "pictureRequired": false,
+  "includeTopAds": false,
+  "lastSearchPush": false,
+  "buyNowOnly": false,
+  "includeAdvertisingBackfillAds": false,
+  "userInventorySearch": false,
+  "bizBrandingSearch": false
+ },
+ "{http://www.ebayclassifiedsgroup.com/schema/ad/v1}ads": {
+  "name": "{http://www.ebayclassifiedsgroup.com/schema/ad/v1}ads",
+  "declaredType": "com.ebay.ecg.api.spec.v1.schema.ad.Ads",
+  "scope": "jakarta.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+   "ad": [
+    {
+     "price": {
+      "currency-iso-code": {
+       "value": {
+        "value": "EUR",
+        "localized-label": "€"
+       }
+      },
+      "amount": {},
+      "range-amount": {},
+      "price-type": {
+       "value": "FREE"
+      }
+     },
+     "ad-type": {
+      "value": "OFFERED"
+     },
+     "poster-type": {
+      "value": "PRIVATE"
+     },
+     "title": {
+      "value": "Großes Ecksofa mit Ottomane - kostenlos an Selbstabholer"
+     },
+     "description": {
+      "value": "Verschenke unsere große, gemütliche Wohnlandschaft in Dunkelgrau wegen Neuanschaffung. Das Sofa bietet viel Platz und hat auf beiden Seiten eine Liegefläche&#x2F;Ottomane. Zusätzlich lässt sich der mittlere Teil des Sofas ausziehen, wodurch eine..."
+     },
+     "imprint": {},
+     "ad-address": {
+      "street": {
+       "value": ""
+      },
+      "state": {
+       "value": "Wesseling"
+      },
+      "zip-code": {
+       "value": "50389"
+      },
+      "longitude": {
+       "value": "6.9787207"
+      },
+      "latitude": {
+       "value": "50.81426"
+      },
+      "radius": {
+       "value": "4.48"
+      },
+      "availability-radius-in-km": {}
+     },
+     "ad-status": {
+      "value": "ACTIVE"
+     },
+     "user-id": {
+      "value": "167127976"
+     },
+     "store-id": {},
+     "store-title": {},
+     "store-url-extension": {},
+     "seller-account-type": {
+      "value": "PRIVATE"
+     },
+     "placeholder-image-present": {
+      "value": "false"
+     },
+     "ad-source-id": {},
+     "phone": {},
+     "start-date-time": {
+      "value": "2026-10-05T12:07:32.000+0200"
+     },
+     "last-user-edit-date": {},
+     "features-active": {
+      "feature-active": []
+     },
+     "category": {
+      "id-name": {
+       "value": "Wohnzimmer"
+      },
+      "localized-name": {
+       "value": "Wohnzimmer"
+      },
+      "link": [],
+      "category": [],
+      "id": "88"
+     },
+     "locations": {
+      "location": [
+       {
+        "id-name": {
+         "value": "50389"
+        },
+        "localized-name": {
+         "value": "50389 Wesseling"
+        },
+        "radius": {
+         "value": "4.48"
+        },
+        "regions": {
+         "region": [
+          {
+           "localized-name": {
+            "value": "Nordrhein-Westfalen"
+           }
+          }
+         ],
+         "localized-label": "Bundesland"
+        },
+        "location": [],
+        "id": "1391"
+       }
+      ]
+     },
+     "buy-now": {
+      "selected": "false"
+     },
+     "attributes": {
+      "attribute": [
+       {
+        "value": [
+         {
+          "value": "sofas_sitzgarnituren",
+          "localized-label": "Sofas & Sitzgarnituren"
+         }
+        ],
+        "range-value": {},
+        "name": "wohnzimmer.art",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "true",
+        "search-multi-select": "true",
+        "type": "ENUM",
+        "localized-label": "Art"
+       },
+       {
+        "value": [
+         {
+          "value": "grau",
+          "localized-label": "Grau"
+         }
+        ],
+        "range-value": {},
+        "name": "wohnzimmer.color",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "type": "ENUM",
+        "localized-label": "Farbe"
+       },
+       {
+        "value": [
+         {
+          "value": "alright",
+          "localized-label": "In Ordnung"
+         }
+        ],
+        "range-value": {},
+        "name": "wohnzimmer.condition",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "type": "ENUM",
+        "localized-label": "Zustand"
+       }
+      ]
+     },
+     "labels": {
+      "label": []
+     },
+     "link": [
+      {
+       "href": "https://api.kleinanzeigen.de/api/ads/3532018050",
+       "rel": "self"
+      },
+      {
+       "href": "https://api.kleinanzeigen.de/api/users/167127976/ads/3532018050",
+       "rel": "self-user"
+      },
+      {
+       "href": "https://www.kleinanzeigen.de/s-anzeige/grosses-ecksofa-mit-ottomane-kostenlos-an-selbstabholer/3532018050-88-1391",
+       "rel": "self-public-website"
+      }
+     ],
+     "pictures": {
+      "picture": [
+       {
+        "link": [
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f73be238-2ba5-4ae1-a596-ff89805e56fb?rule=$_0.AUTO",
+          "rel": "thumbnail"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f73be238-2ba5-4ae1-a596-ff89805e56fb?rule=$_2.AUTO",
+          "rel": "teaser"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f73be238-2ba5-4ae1-a596-ff89805e56fb?rule=$_1.AUTO",
+          "rel": "large"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f73be238-2ba5-4ae1-a596-ff89805e56fb?rule=$_59.AUTO",
+          "rel": "extraLarge"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f73be238-2ba5-4ae1-a596-ff89805e56fb?rule=$_57.AUTO",
+          "rel": "XXL"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f73be238-2ba5-4ae1-a596-ff89805e56fb?rule=$_{imageId}.AUTO",
+          "rel": "canonicalUrl"
+         }
+        ],
+        "tags": {}
+       }
+      ]
+     },
+     "documents": {
+      "document": []
+     },
+     "displayoptions": {
+      "reduced-ads-on-vip": {
+       "value": "false"
+      },
+      "hide-ads-on-vip": {
+       "value": "false"
+      },
+      "show-ratings": {
+       "value": "true"
+      },
+      "ad-flagging-enabled": {
+       "value": "true"
+      },
+      "hide-similard-ads-on-vip": {
+       "value": "false"
+      },
+      "category-change-allowed": {
+       "value": "true"
+      },
+      "offer-allowed": {
+       "value": "false"
+      },
+      "secure-payment-possible": {
+       "value": "false"
+      },
+      "ad-description-formatting-enabled": {
+       "value": "false"
+      },
+      "ad-documents-upload-enabled": {
+       "value": "false"
+      },
+      "display-map-on-vip": {
+       "value": "false"
+      },
+      "licence-plate-blurring-enabled": {
+       "value": "false"
+      },
+      "contact-poster-feedback": "",
+      "lead-generation-target": {
+       "value": "false"
+      },
+      "enable-image-titles": {
+       "value": "false"
+      },
+      "eligible-for-call-tracking": {
+       "value": "false"
+      },
+      "contact-button-on-vip": {
+       "value": "true",
+       "action": {
+        "type": "Conversation",
+        "data": ""
+       }
+      },
+      "vip-type": "VIP",
+      "is-new-construction": {
+       "value": "false"
+      },
+      "show-other-projects": {
+       "value": "false"
+      },
+      "show-collage": {
+       "value": "false"
+      },
+      "show-company-logo": {
+       "value": "false"
+      }
+     },
+     "medias": {
+      "media": []
+     },
+     "financing-provider": {},
+     "financing-details": {},
+     "financing-eligible": {
+      "value": "false"
+     },
+     "re-financing-eligible": {
+      "value": "false"
+     },
+     "otherAttributes": {},
+     "id": "3532018050"
+    }
+   ],
+   "paging": {
+    "numFound": "12841",
+    "exactNumFound": "true",
+    "link": [
+     {
+      "href": "https://api.kleinanzeigen.de/api/ads.json?q=sofa&pictureRequired=false&minPrice=0&maxPrice=0&priceCurrency=EUR&includeAdvertisingBackfillAds=false&histograms=CATEGORY&page=0&size=1&_ver=1.16",
+      "rel": "self"
+     },
+     {
+      "href": "https://www.kleinanzeigen.de/s-preis:0:0/sofa/k0",
+      "rel": "self-public-website"
+     },
+     {
+      "href": "https://www.kleinanzeigen.de/s-preis:0:0/sofa/k0",
+      "rel": "self-public-website-canonical"
+     },
+     {
+      "href": "https://api.kleinanzeigen.de/api/ads.json?q=sofa&pictureRequired=false&minPrice=0&maxPrice=0&priceCurrency=EUR&includeAdvertisingBackfillAds=false&indexDate=2026-10-05T12%3A07%3A32&histograms=CATEGORY&page=1&size=1&_ver=1.16",
+      "rel": "next"
+     }
+    ]
+   },
+   "page-layout": "LIST",
+   "ads-search-options": {
+    "q": {
+     "value": "sofa"
+    },
+    "priceCurrency": {
+     "value": "EUR"
+    },
+    "minPrice": {
+     "value": 0
+    },
+    "maxPrice": {
+     "value": 0
+    },
+    "page": {
+     "value": "0"
+    },
+    "size": {
+     "value": "1"
+    },
+    "pictureRequired": {
+     "value": "false"
+    },
+    "indexDate": {
+     "value": "2026-10-05T12:07:32.000+0200"
+    },
+    "includeAdvertisingBackfillAds": {
+     "value": "false"
+    },
+    "histograms": {
+     "value": [
+      "CATEGORY"
+     ]
+    },
+    "buyNowOnly": {
+     "value": "false"
+    }
+   },
+   "ads-search-histograms": {
+    "ads-category-histogram": {
+     "ads-category": [
+      {
+       "value": "3",
+       "id": "210"
+      },
+      {
+       "value": "4",
+       "id": "231"
+      },
+      {
+       "value": "7",
+       "id": "161"
+      },
+      {
+       "value": "81",
+       "id": "17"
+      },
+      {
+       "value": "57",
+       "id": "185"
+      },
+      {
+       "value": "12668",
+       "id": "80"
+      },
+      {
+       "value": "11",
+       "id": "130"
+      },
+      {
+       "value": "2",
+       "id": "195"
+      },
+      {
+       "value": "3",
+       "id": "153"
+      },
+      {
+       "value": "4",
+       "id": "73"
+      },
+      {
+       "value": "1",
+       "id": "235"
+      }
+     ]
+    }
+   },
+   "ads-search-result-metadata": {
+    "title": {
+     "value": "Sofa kleinanzeigen.de"
+    },
+    "description": {
+     "value": "Kleinanzeigen: Sofa - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    "dominant-category-id": "88",
+    "overridden-by-semantic-search": "false"
+   }
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": false
+ }
+}

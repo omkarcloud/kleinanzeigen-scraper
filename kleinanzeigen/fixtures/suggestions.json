@@ -1,0 +1,296 @@
+{
+ "hits": [
+  {
+   "_highlightResult": {
+    "completion": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "fahr"
+     ],
+     "value": "<em>fahr</em>rad"
+    }
+   },
+   "categories": [
+    {
+     "canonicalName": null,
+     "depth": 0,
+     "id": "0",
+     "localizedNames": {
+      "de_DE": "Alle Kategorien"
+     },
+     "pathToRoot": [
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    },
+    {
+     "canonicalName": null,
+     "depth": 2,
+     "id": "217",
+     "localizedNames": {
+      "de_DE": "Fahrräder & Zubehör"
+     },
+     "pathToRoot": [
+      {
+       "id": "217",
+       "localizedNames": {
+        "de_DE": "Fahrräder & Zubehör"
+       }
+      },
+      {
+       "id": "210",
+       "localizedNames": {
+        "de_DE": "Auto, Rad & Boot"
+       }
+      },
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    },
+    {
+     "canonicalName": null,
+     "depth": 2,
+     "id": "192",
+     "localizedNames": {
+      "de_DE": "Verschenken"
+     },
+     "pathToRoot": [
+      {
+       "id": "192",
+       "localizedNames": {
+        "de_DE": "Verschenken"
+       }
+      },
+      {
+       "id": "272",
+       "localizedNames": {
+        "de_DE": "Verschenken & Tauschen"
+       }
+      },
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    }
+   ],
+   "completion": "fahrrad",
+   "conversions": 694452.0,
+   "conversionsWeight": 0.2237,
+   "frequency": 7512014,
+   "frequencyWeight": 0.2978,
+   "objectID": "WykaC6EBFrmcm-S1g36r",
+   "wordLength": 1
+  },
+  {
+   "_highlightResult": {
+    "completion": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "fahr"
+     ],
+     "value": "<em>fahr</em>rad 24 zoll"
+    }
+   },
+   "categories": [
+    {
+     "canonicalName": null,
+     "depth": 0,
+     "id": "0",
+     "localizedNames": {
+      "de_DE": "Alle Kategorien"
+     },
+     "pathToRoot": [
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    },
+    {
+     "canonicalName": null,
+     "depth": 2,
+     "id": "217",
+     "localizedNames": {
+      "de_DE": "Fahrräder & Zubehör"
+     },
+     "pathToRoot": [
+      {
+       "id": "217",
+       "localizedNames": {
+        "de_DE": "Fahrräder & Zubehör"
+       }
+      },
+      {
+       "id": "210",
+       "localizedNames": {
+        "de_DE": "Auto, Rad & Boot"
+       }
+      },
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    },
+    {
+     "canonicalName": null,
+     "depth": 2,
+     "id": "230",
+     "localizedNames": {
+      "de_DE": "Sport & Camping"
+     },
+     "pathToRoot": [
+      {
+       "id": "230",
+       "localizedNames": {
+        "de_DE": "Sport & Camping"
+       }
+      },
+      {
+       "id": "185",
+       "localizedNames": {
+        "de_DE": "Freizeit, Hobby & Nachbarschaft"
+       }
+      },
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    }
+   ],
+   "completion": "fahrrad 24 zoll",
+   "conversions": 128472.0,
+   "conversionsWeight": 0.0414,
+   "frequency": 1043674,
+   "frequencyWeight": 0.0414,
+   "objectID": "l0gaC6EBgIWaUvrof7nN",
+   "wordLength": 3
+  },
+  {
+   "_highlightResult": {
+    "completion": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "fahr"
+     ],
+     "value": "<em>fahr</em>rad 26 zoll"
+    }
+   },
+   "categories": [
+    {
+     "canonicalName": null,
+     "depth": 0,
+     "id": "0",
+     "localizedNames": {
+      "de_DE": "Alle Kategorien"
+     },
+     "pathToRoot": [
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    },
+    {
+     "canonicalName": null,
+     "depth": 2,
+     "id": "217",
+     "localizedNames": {
+      "de_DE": "Fahrräder & Zubehör"
+     },
+     "pathToRoot": [
+      {
+       "id": "217",
+       "localizedNames": {
+        "de_DE": "Fahrräder & Zubehör"
+       }
+      },
+      {
+       "id": "210",
+       "localizedNames": {
+        "de_DE": "Auto, Rad & Boot"
+       }
+      },
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    },
+    {
+     "canonicalName": null,
+     "depth": 2,
+     "id": "230",
+     "localizedNames": {
+      "de_DE": "Sport & Camping"
+     },
+     "pathToRoot": [
+      {
+       "id": "230",
+       "localizedNames": {
+        "de_DE": "Sport & Camping"
+       }
+      },
+      {
+       "id": "185",
+       "localizedNames": {
+        "de_DE": "Freizeit, Hobby & Nachbarschaft"
+       }
+      },
+      {
+       "id": "0",
+       "localizedNames": {
+        "de_DE": "Alle Kategorien"
+       }
+      }
+     ]
+    }
+   ],
+   "completion": "fahrrad 26 zoll",
+   "conversions": 96329.0,
+   "conversionsWeight": 0.031,
+   "frequency": 845411,
+   "frequencyWeight": 0.0335,
+   "objectID": "bEgaC6EBgIWaUvroPy2m",
+   "wordLength": 3
+  }
+ ],
+ "nbHits": 1164,
+ "page": 0,
+ "nbPages": 388,
+ "hitsPerPage": 3,
+ "exhaustiveNbHits": true,
+ "exhaustiveTypo": true,
+ "exhaustive": {
+  "typo": true,
+  "nbHits": true
+ },
+ "query": "fahr",
+ "params": "query=fahr",
+ "processingTimeMS": 4
+}

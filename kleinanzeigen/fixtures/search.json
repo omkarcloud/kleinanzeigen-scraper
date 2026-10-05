@@ -1,0 +1,1028 @@
+{
+ "searchOptions": {
+  "posterType": "COMMERCIAL",
+  "size": 40,
+  "extension": {},
+  "categoryId": [
+   216
+  ],
+  "attr": {},
+  "pictureRequired": false,
+  "includeTopAds": true,
+  "lastSearchPush": false,
+  "buyNowOnly": false,
+  "includeAdvertisingBackfillAds": false,
+  "userInventorySearch": false,
+  "bizBrandingSearch": false
+ },
+ "{http://www.ebayclassifiedsgroup.com/schema/ad/v1}ads": {
+  "name": "{http://www.ebayclassifiedsgroup.com/schema/ad/v1}ads",
+  "declaredType": "com.ebay.ecg.api.spec.v1.schema.ad.Ads",
+  "scope": "jakarta.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+   "ad": [
+    {
+     "price": {
+      "currency-iso-code": {
+       "value": {
+        "value": "EUR",
+        "localized-label": "€"
+       }
+      },
+      "amount": {
+       "value": 3500
+      },
+      "range-amount": {},
+      "price-type": {
+       "value": "SPECIFIED_AMOUNT"
+      }
+     },
+     "ad-type": {
+      "value": "OFFERED"
+     },
+     "poster-type": {
+      "value": "COMMERCIAL"
+     },
+     "title": {
+      "value": "VW UP Schwarz  Mod 2013"
+     },
+     "description": {
+      "value": "Vw up guter Zustand 1Hand<br /><br />Scheckheft gepflegt alles eingetragen<br /><br />Sparsam<br /><br />Klima. Servo E Fenster<br /><br />Armaturenbrett Schwarz<br /><br />Preis Inc Mehrwertsteuer"
+     },
+     "imprint": {},
+     "ad-address": {
+      "street": {
+       "value": ""
+      },
+      "state": {
+       "value": "Borgholzhausen"
+      },
+      "zip-code": {
+       "value": "33829"
+      },
+      "longitude": {
+       "value": "8.2813015"
+      },
+      "latitude": {
+       "value": "52.102554"
+      },
+      "radius": {
+       "value": "6.01"
+      },
+      "availability-radius-in-km": {}
+     },
+     "ad-status": {
+      "value": "ACTIVE"
+     },
+     "user-id": {
+      "value": "80020496"
+     },
+     "store-id": {
+      "value": "121085"
+     },
+     "store-title": {
+      "value": "REINHARD EBBERT NUTZFAHRZEUGE"
+     },
+     "store-url-extension": {
+      "value": "reinhard-ebbert-nutzfahrzeuge"
+     },
+     "seller-account-type": {
+      "value": "PRO"
+     },
+     "placeholder-image-present": {
+      "value": "false"
+     },
+     "ad-source-id": {},
+     "phone": {},
+     "start-date-time": {
+      "value": "2026-10-05T12:07:24.000+0200"
+     },
+     "last-user-edit-date": {},
+     "features-active": {
+      "feature-active": []
+     },
+     "category": {
+      "id-name": {
+       "value": "Autos"
+      },
+      "localized-name": {
+       "value": "Autos"
+      },
+      "link": [],
+      "category": [],
+      "id": "216"
+     },
+     "locations": {
+      "location": [
+       {
+        "id-name": {
+         "value": "33829"
+        },
+        "localized-name": {
+         "value": "33829 Borgholzhausen"
+        },
+        "radius": {
+         "value": "6.01"
+        },
+        "regions": {
+         "region": [
+          {
+           "localized-name": {
+            "value": "Nordrhein-Westfalen"
+           }
+          }
+         ],
+         "localized-label": "Bundesland"
+        },
+        "location": [],
+        "id": "1594"
+       }
+      ]
+     },
+     "buy-now": {
+      "selected": "false"
+     },
+     "attributes": {
+      "attribute": [
+       {
+        "value": [
+         {
+          "value": "volkswagen",
+          "localized-label": "Volkswagen"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.marke",
+        "unit": "",
+        "search-display": "false",
+        "dependent-name": "autos.model",
+        "fake-sub-category": "true",
+        "search-multi-select": "false",
+        "type": "ENUM",
+        "localized-label": "Marke"
+       },
+       {
+        "value": [
+         {
+          "value": "up",
+          "localized-label": "up!"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.model",
+        "unit": "",
+        "search-display": "false",
+        "parent-name": "autos.marke",
+        "fake-sub-category": "true",
+        "search-multi-select": "true",
+        "type": "ENUM",
+        "localized-label": "Modell"
+       },
+       {
+        "value": [
+         {
+          "value": "187000",
+          "localized-label": "187.000"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.km",
+        "unit": "km",
+        "search-display": "true",
+        "min-value": "0",
+        "max-value": "2000000",
+        "search-multi-select": "false",
+        "type": "LONG",
+        "localized-label": "Kilometerstand"
+       },
+       {
+        "value": [
+         {
+          "value": "nein",
+          "localized-label": "Unbeschädigtes Fahrzeug"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.schaden",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "false",
+        "type": "ENUM",
+        "localized-label": "Fahrzeugzustand"
+       },
+       {
+        "value": [
+         {
+          "value": "2012-11",
+          "localized-label": "EZ 11/2012"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.ezdate",
+        "unit": "",
+        "search-display": "true",
+        "min-value": "1910-01-01",
+        "max-value": "2026-10-05",
+        "date-type": "YEAR_MONTH",
+        "search-multi-select": "false",
+        "type": "DATE",
+        "localized-label": "Erstzulassung"
+       },
+       {
+        "value": [
+         {
+          "value": "benzin",
+          "localized-label": "Benzin"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.fuel",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "type": "ENUM",
+        "localized-label": "Kraftstoffart"
+       },
+       {
+        "value": [
+         {
+          "value": "44",
+          "localized-label": "44"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.power",
+        "unit": "PS",
+        "search-display": "false",
+        "min-value": "0",
+        "max-value": "20000",
+        "search-multi-select": "false",
+        "type": "LONG",
+        "localized-label": "Leistung"
+       },
+       {
+        "value": [
+         {
+          "value": "manuell",
+          "localized-label": "Manuell"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.shift",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "false",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Getriebe"
+       },
+       {
+        "value": [
+         {
+          "value": "kleinwagen",
+          "localized-label": "Kleinwagen"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.typ",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Fahrzeugtyp"
+       },
+       {
+        "value": [
+         {
+          "value": "2_3",
+          "localized-label": "2/3"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.anzahl_tueren",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Anzahl Türen"
+       },
+       {
+        "value": [
+         {
+          "value": "2027-10",
+          "localized-label": "Oktober 2027"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.tuevdate",
+        "unit": "",
+        "search-display": "false",
+        "min-value": "2026-10-05",
+        "max-value": "2029-10-05",
+        "date-type": "YEAR_MONTH",
+        "search-multi-select": "false",
+        "type": "DATE",
+        "localized-label": "HU bis"
+       },
+       {
+        "value": [
+         {
+          "value": "4_gruen",
+          "localized-label": "4 (Grün)"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.umweltplakette",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Umweltplakette"
+       },
+       {
+        "value": [
+         {
+          "value": "euro5",
+          "localized-label": "Euro5"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.schadstoffklasse",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Schadstoffklasse"
+       },
+       {
+        "value": [
+         {
+          "value": "schwarz",
+          "localized-label": "Schwarz"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.aussenfarbe",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "true",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Außenfarbe"
+       },
+       {
+        "value": [
+         {
+          "value": "stoff",
+          "localized-label": "Stoff"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.material_innenausstattung",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "false",
+        "group-name": "vehicle_details",
+        "group-localized-label": "Fahrzeugdetails",
+        "type": "ENUM",
+        "localized-label": "Material Innenausstattung"
+       }
+      ]
+     },
+     "labels": {
+      "label": []
+     },
+     "link": [
+      {
+       "href": "https://api.kleinanzeigen.de/api/ads/3453159155",
+       "rel": "self"
+      },
+      {
+       "href": "https://api.kleinanzeigen.de/api/users/80020496/ads/3453159155",
+       "rel": "self-user"
+      },
+      {
+       "href": "https://www.kleinanzeigen.de/s-anzeige/vw-up-schwarz-mod-2013/3453159155-216-1594",
+       "rel": "self-public-website"
+      }
+     ],
+     "pictures": {
+      "picture": [
+       {
+        "link": [
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b84eaa36-9ab2-4fe9-af91-7174d7d57ab2?rule=$_0.AUTO",
+          "rel": "thumbnail"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b84eaa36-9ab2-4fe9-af91-7174d7d57ab2?rule=$_2.AUTO",
+          "rel": "teaser"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b84eaa36-9ab2-4fe9-af91-7174d7d57ab2?rule=$_1.AUTO",
+          "rel": "large"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b84eaa36-9ab2-4fe9-af91-7174d7d57ab2?rule=$_59.AUTO",
+          "rel": "extraLarge"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b84eaa36-9ab2-4fe9-af91-7174d7d57ab2?rule=$_57.AUTO",
+          "rel": "XXL"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b84eaa36-9ab2-4fe9-af91-7174d7d57ab2?rule=$_{imageId}.AUTO",
+          "rel": "canonicalUrl"
+         }
+        ],
+        "tags": {}
+       },
+       {
+        "link": [
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01f8ab1d-2d70-4785-a7fd-2854124ccd6d?rule=$_0.AUTO",
+          "rel": "thumbnail"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01f8ab1d-2d70-4785-a7fd-2854124ccd6d?rule=$_2.AUTO",
+          "rel": "teaser"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01f8ab1d-2d70-4785-a7fd-2854124ccd6d?rule=$_1.AUTO",
+          "rel": "large"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01f8ab1d-2d70-4785-a7fd-2854124ccd6d?rule=$_59.AUTO",
+          "rel": "extraLarge"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01f8ab1d-2d70-4785-a7fd-2854124ccd6d?rule=$_57.AUTO",
+          "rel": "XXL"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01f8ab1d-2d70-4785-a7fd-2854124ccd6d?rule=$_{imageId}.AUTO",
+          "rel": "canonicalUrl"
+         }
+        ],
+        "tags": {}
+       }
+      ]
+     },
+     "documents": {
+      "document": []
+     },
+     "displayoptions": {
+      "reduced-ads-on-vip": {
+       "value": "true"
+      },
+      "hide-ads-on-vip": {
+       "value": "false"
+      },
+      "show-ratings": {
+       "value": "true"
+      },
+      "ad-flagging-enabled": {
+       "value": "true"
+      },
+      "hide-similard-ads-on-vip": {
+       "value": "true"
+      },
+      "category-change-allowed": {
+       "value": "true"
+      },
+      "offer-allowed": {
+       "value": "false"
+      },
+      "secure-payment-possible": {
+       "value": "false"
+      },
+      "ad-description-formatting-enabled": {
+       "value": "false"
+      },
+      "ad-documents-upload-enabled": {
+       "value": "false"
+      },
+      "display-map-on-vip": {
+       "value": "false"
+      },
+      "licence-plate-blurring-enabled": {
+       "value": "false"
+      },
+      "contact-poster-feedback": "",
+      "lead-generation-target": {
+       "value": "false"
+      },
+      "enable-image-titles": {
+       "value": "false"
+      },
+      "eligible-for-call-tracking": {
+       "value": "false"
+      },
+      "contact-button-on-vip": {
+       "value": "true",
+       "action": {
+        "type": "Conversation",
+        "data": ""
+       }
+      },
+      "vip-type": "VIP",
+      "is-new-construction": {
+       "value": "false"
+      },
+      "show-other-projects": {
+       "value": "false"
+      },
+      "show-collage": {
+       "value": "false"
+      },
+      "show-company-logo": {
+       "value": "false"
+      }
+     },
+     "medias": {
+      "media": []
+     },
+     "financing-provider": {},
+     "financing-details": {},
+     "financing-eligible": {
+      "value": "false"
+     },
+     "re-financing-eligible": {
+      "value": "false"
+     },
+     "otherAttributes": {},
+     "id": "3453159155"
+    },
+    {
+     "price": {
+      "currency-iso-code": {
+       "value": {
+        "value": "EUR",
+        "localized-label": "€"
+       }
+      },
+      "amount": {},
+      "range-amount": {},
+      "price-type": {
+       "value": "PLEASE_CONTACT"
+      }
+     },
+     "ad-type": {
+      "value": "WANTED"
+     },
+     "poster-type": {
+      "value": "COMMERCIAL"
+     },
+     "title": {
+      "value": "Suche Ankauf Porsche 911 996  997 991 Turbo GT3 GT2 RS"
+     },
+     "description": {
+      "value": "Suche Porsche 911<br /><br />Sofortiger Ankauf!<br /><br />Sofortige Abholung & direkte Bezahlung.<br /><br />Auch Fahrzeuge mit Mängeln oder Unfallschäden möglich!<br /><br />Faire Preise, schnelle & diskrete Abwicklung.<br />Deutschlandweit.<br..."
+     },
+     "imprint": {},
+     "ad-address": {
+      "street": {
+       "value": ""
+      },
+      "state": {
+       "value": "Mörlenbach"
+      },
+      "zip-code": {
+       "value": "69509"
+      },
+      "longitude": {
+       "value": "8.7314"
+      },
+      "latitude": {
+       "value": "49.5961"
+      },
+      "radius": {
+       "value": "3.29"
+      },
+      "availability-radius-in-km": {}
+     },
+     "ad-status": {
+      "value": "ACTIVE"
+     },
+     "user-id": {
+      "value": "159107397"
+     },
+     "store-id": {},
+     "store-title": {},
+     "store-url-extension": {},
+     "seller-account-type": {
+      "value": "COMMERCIAL"
+     },
+     "placeholder-image-present": {
+      "value": "false"
+     },
+     "ad-source-id": {},
+     "phone": {},
+     "start-date-time": {
+      "value": "2026-10-04T16:16:30.000+0200"
+     },
+     "last-user-edit-date": {},
+     "features-active": {
+      "feature-active": [
+       {
+        "name": "TOPAD",
+        "display": "true"
+       }
+      ]
+     },
+     "category": {
+      "id-name": {
+       "value": "Autos"
+      },
+      "localized-name": {
+       "value": "Autos"
+      },
+      "link": [],
+      "category": [],
+      "id": "216"
+     },
+     "locations": {
+      "location": [
+       {
+        "id-name": {
+         "value": "69509"
+        },
+        "localized-name": {
+         "value": "69509 Mörlenbach"
+        },
+        "radius": {
+         "value": "3.29"
+        },
+        "regions": {
+         "region": [
+          {
+           "localized-name": {
+            "value": "Hessen"
+           }
+          }
+         ],
+         "localized-label": "Bundesland"
+        },
+        "location": [],
+        "id": "8262"
+       }
+      ]
+     },
+     "buy-now": {
+      "selected": "false"
+     },
+     "attributes": {
+      "attribute": [
+       {
+        "value": [
+         {
+          "value": "porsche",
+          "localized-label": "Porsche"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.marke",
+        "unit": "",
+        "search-display": "false",
+        "dependent-name": "autos.model",
+        "fake-sub-category": "true",
+        "search-multi-select": "false",
+        "type": "ENUM",
+        "localized-label": "Marke"
+       },
+       {
+        "value": [
+         {
+          "value": "997",
+          "localized-label": "997"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.model",
+        "unit": "",
+        "search-display": "false",
+        "parent-name": "autos.marke",
+        "fake-sub-category": "true",
+        "search-multi-select": "true",
+        "type": "ENUM",
+        "localized-label": "Modell"
+       },
+       {
+        "value": [
+         {
+          "value": "5555",
+          "localized-label": "5.555"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.km",
+        "unit": "km",
+        "search-display": "true",
+        "min-value": "0",
+        "max-value": "2000000",
+        "search-multi-select": "false",
+        "type": "LONG",
+        "localized-label": "Kilometerstand"
+       },
+       {
+        "value": [
+         {
+          "value": "nein",
+          "localized-label": "Unbeschädigtes Fahrzeug"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.schaden",
+        "unit": "",
+        "search-display": "false",
+        "fake-sub-category": "false",
+        "search-multi-select": "false",
+        "type": "ENUM",
+        "localized-label": "Fahrzeugzustand"
+       },
+       {
+        "value": [
+         {
+          "value": "2003-04",
+          "localized-label": "EZ 04/2003"
+         }
+        ],
+        "range-value": {},
+        "name": "autos.ezdate",
+        "unit": "",
+        "search-display": "true",
+        "min-value": "1910-01-01",
+        "max-value": "2026-10-05",
+        "date-type": "YEAR_MONTH",
+        "search-multi-select": "false",
+        "type": "DATE",
+        "localized-label": "Erstzulassung"
+       }
+      ]
+     },
+     "labels": {
+      "label": [
+       {
+        "name": "top",
+        "localizedLabel": "TOP",
+        "position": "TOP"
+       }
+      ]
+     },
+     "link": [
+      {
+       "href": "https://api.kleinanzeigen.de/api/ads/3383105304",
+       "rel": "self"
+      },
+      {
+       "href": "https://api.kleinanzeigen.de/api/users/159107397/ads/3383105304",
+       "rel": "self-user"
+      },
+      {
+       "href": "https://www.kleinanzeigen.de/s-anzeige/suche-ankauf-porsche-911-996-997-991-turbo-gt3-gt2-rs/3383105304-216-8262",
+       "rel": "self-public-website"
+      }
+     ],
+     "pictures": {
+      "picture": [
+       {
+        "link": [
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe8f8872-47fc-4439-98b7-e75621a0c067?rule=$_0.AUTO",
+          "rel": "thumbnail"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe8f8872-47fc-4439-98b7-e75621a0c067?rule=$_2.AUTO",
+          "rel": "teaser"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe8f8872-47fc-4439-98b7-e75621a0c067?rule=$_1.AUTO",
+          "rel": "large"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe8f8872-47fc-4439-98b7-e75621a0c067?rule=$_59.AUTO",
+          "rel": "extraLarge"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe8f8872-47fc-4439-98b7-e75621a0c067?rule=$_57.AUTO",
+          "rel": "XXL"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe8f8872-47fc-4439-98b7-e75621a0c067?rule=$_{imageId}.AUTO",
+          "rel": "canonicalUrl"
+         }
+        ],
+        "tags": {}
+       },
+       {
+        "link": [
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1bac814-f7d5-4a2c-9ab3-486c66b797ca?rule=$_0.AUTO",
+          "rel": "thumbnail"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1bac814-f7d5-4a2c-9ab3-486c66b797ca?rule=$_2.AUTO",
+          "rel": "teaser"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1bac814-f7d5-4a2c-9ab3-486c66b797ca?rule=$_1.AUTO",
+          "rel": "large"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1bac814-f7d5-4a2c-9ab3-486c66b797ca?rule=$_59.AUTO",
+          "rel": "extraLarge"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1bac814-f7d5-4a2c-9ab3-486c66b797ca?rule=$_57.AUTO",
+          "rel": "XXL"
+         },
+         {
+          "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1bac814-f7d5-4a2c-9ab3-486c66b797ca?rule=$_{imageId}.AUTO",
+          "rel": "canonicalUrl"
+         }
+        ],
+        "tags": {}
+       }
+      ]
+     },
+     "documents": {
+      "document": []
+     },
+     "displayoptions": {
+      "reduced-ads-on-vip": {
+       "value": "false"
+      },
+      "hide-ads-on-vip": {
+       "value": "false"
+      },
+      "show-ratings": {
+       "value": "true"
+      },
+      "ad-flagging-enabled": {
+       "value": "true"
+      },
+      "hide-similard-ads-on-vip": {
+       "value": "false"
+      },
+      "category-change-allowed": {
+       "value": "false"
+      },
+      "offer-allowed": {
+       "value": "false"
+      },
+      "secure-payment-possible": {
+       "value": "false"
+      },
+      "ad-description-formatting-enabled": {
+       "value": "false"
+      },
+      "ad-documents-upload-enabled": {
+       "value": "false"
+      },
+      "display-map-on-vip": {
+       "value": "false"
+      },
+      "licence-plate-blurring-enabled": {
+       "value": "false"
+      },
+      "contact-poster-feedback": "",
+      "lead-generation-target": {
+       "value": "false"
+      },
+      "enable-image-titles": {
+       "value": "false"
+      },
+      "eligible-for-call-tracking": {
+       "value": "false"
+      },
+      "contact-button-on-vip": {
+       "value": "true",
+       "action": {
+        "type": "Conversation",
+        "data": ""
+       }
+      },
+      "vip-type": "VIP",
+      "is-new-construction": {
+       "value": "false"
+      },
+      "show-other-projects": {
+       "value": "false"
+      },
+      "show-collage": {
+       "value": "false"
+      },
+      "show-company-logo": {
+       "value": "false"
+      }
+     },
+     "medias": {
+      "media": []
+     },
+     "financing-provider": {},
+     "financing-details": {},
+     "financing-eligible": {
+      "value": "false"
+     },
+     "re-financing-eligible": {
+      "value": "false"
+     },
+     "otherAttributes": {},
+     "id": "3383105304"
+    }
+   ],
+   "paging": {
+    "numFound": "319283",
+    "exactNumFound": "true",
+    "link": [
+     {
+      "href": "https://api.kleinanzeigen.de/api/ads.json?posterType=COMMERCIAL&pictureRequired=false&categoryId=216&includeTopAds=true&includeAdvertisingBackfillAds=false&page=0&size=40&_ver=1.16",
+      "rel": "self"
+     },
+     {
+      "href": "https://www.kleinanzeigen.de/s-autos/anbieter:gewerblich/c216",
+      "rel": "self-public-website"
+     },
+     {
+      "href": "https://www.kleinanzeigen.de/s-autos/anbieter:gewerblich/c216",
+      "rel": "self-public-website-canonical"
+     },
+     {
+      "href": "https://api.kleinanzeigen.de/api/ads.json?posterType=COMMERCIAL&pictureRequired=false&categoryId=216&includeTopAds=true&includeAdvertisingBackfillAds=false&indexDate=2026-10-05T12%3A07%3A58&page=1&size=40&_ver=1.16",
+      "rel": "next"
+     }
+    ]
+   },
+   "page-layout": "LIST",
+   "ads-search-options": {
+    "categoryId": {
+     "value": "216"
+    },
+    "posterType": {
+     "value": "COMMERCIAL"
+    },
+    "page": {
+     "value": "0"
+    },
+    "size": {
+     "value": "40"
+    },
+    "api-warnings": {
+     "api-warning": [
+      {
+       "param": "buyNowOnly",
+       "code": "OTHER",
+       "message": "'buyNowOnly': Illegal parameter for search",
+       "recover-fallback": "Discarding parameter"
+      }
+     ]
+    },
+    "pictureRequired": {
+     "value": "false"
+    },
+    "indexDate": {
+     "value": "2026-10-05T12:07:58.000+0200"
+    },
+    "includeTopAds": {
+     "value": "true"
+    },
+    "includeAdvertisingBackfillAds": {
+     "value": "false"
+    }
+   },
+   "ads-search-histograms": {},
+   "ads-search-result-metadata": {
+    "title": {
+     "value": "Gebrauchtwagen kaufen | kleinanzeigen.de"
+    },
+    "description": {
+     "value": "Kleinanzeigen: Gebrauchtwagen kaufen oder verkaufen - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    "dominant-category-id": "216",
+    "overridden-by-semantic-search": "false"
+   }
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": false
+ }
+}

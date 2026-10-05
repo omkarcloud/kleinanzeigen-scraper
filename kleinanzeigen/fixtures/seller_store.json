@@ -1,0 +1,53 @@
+{
+ "id": "158553607",
+ "userSince": "2025-12-16T08:18:47.000+0100",
+ "contactName": "Antiques",
+ "posterType": "COMMERCIAL",
+ "initials": "A",
+ "counters": {
+  "historicalAds": 260,
+  "onlineAds": 200,
+  "followers": 1295
+ },
+ "replyIndicators": {},
+ "userBadges": {
+  "badges": [
+   {
+    "name": "rating",
+    "level": 2,
+    "value": ""
+   },
+   {
+    "name": "friendliness",
+    "level": 1,
+    "value": ""
+   },
+   {
+    "name": "reliability",
+    "level": 1,
+    "value": ""
+   },
+   {
+    "name": "followers",
+    "level": 2,
+    "value": "1295"
+   }
+  ]
+ },
+ "userRatings": {
+  "averageRating": 0.75
+ },
+ "securePayment": false,
+ "sellerAccountType": "commercial_propremium",
+ "bizBranding": {
+  "id": "202135",
+  "title": "Holz , Naturstein & Historische Baustoffe",
+  "logoUrl": "https://img.kleinanzeigen.de/api/v1/prod-user/images/d0/d0d69a6a-40d8-4ae8-8669-06abee6f03ba?rule=$_12.JPG",
+  "webUrl": "https://www.kleinanzeigen.de/pro/holz--naturstein--historische-baustoffe",
+  "contactPerson": ""
+ },
+ "tracking": {
+  "userAccountType": "commercial_propremium",
+  "encryptedSellerId": "4304bd6132733358528422992ba25e98"
+ }
+}

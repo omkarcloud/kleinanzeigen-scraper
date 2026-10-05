@@ -1,0 +1,118 @@
+{
+ "{http://www.ebayclassifiedsgroup.com/schema/location/v1}location": {
+  "name": "{http://www.ebayclassifiedsgroup.com/schema/location/v1}location",
+  "declaredType": "com.ebay.ecg.api.spec.v1.schema.location.Location",
+  "scope": "jakarta.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+   "id-name": {
+    "value": "Münster (Westfalen)"
+   },
+   "localized-name": {
+    "value": "Münster (Westfalen)"
+   },
+   "longitude": {
+    "value": "7.61783"
+   },
+   "latitude": {
+    "value": "51.96301"
+   },
+   "radius": {
+    "value": "9.07"
+   },
+   "regions": {
+    "region": [
+     {
+      "localized-name": {
+       "value": "Nordrhein-Westfalen"
+      }
+     }
+    ],
+    "localized-label": "Bundesland"
+   },
+   "location": [
+    {
+     "id-name": {
+      "value": "Aaseestadt"
+     },
+     "localized-name": {
+      "value": "Aaseestadt (Münster (Westfalen))"
+     },
+     "longitude": {
+      "value": "7.6001277"
+     },
+     "latitude": {
+      "value": "51.9413"
+     },
+     "radius": {
+      "value": "5.0"
+     },
+     "regions": {
+      "region": [
+       {
+        "localized-name": {
+         "value": "Nordrhein-Westfalen"
+        }
+       }
+      ],
+      "localized-label": "Bundesland"
+     },
+     "location": [],
+     "parent-id": {
+      "value": "929"
+     },
+     "children-count": {
+      "value": "2"
+     },
+     "id": "24199"
+    },
+    {
+     "id-name": {
+      "value": "Albachten"
+     },
+     "localized-name": {
+      "value": "Albachten (Münster (Westfalen))"
+     },
+     "longitude": {
+      "value": "7.526389"
+     },
+     "latitude": {
+      "value": "51.92361"
+     },
+     "radius": {
+      "value": "3.19"
+     },
+     "regions": {
+      "region": [
+       {
+        "localized-name": {
+         "value": "Nordrhein-Westfalen"
+        }
+       }
+      ],
+      "localized-label": "Bundesland"
+     },
+     "location": [],
+     "parent-id": {
+      "value": "929"
+     },
+     "children-count": {
+      "value": "1"
+     },
+     "id": "16765"
+    }
+   ],
+   "parent-id": {
+    "value": "928"
+   },
+   "children-count": {
+    "value": "22"
+   },
+   "id": "929",
+   "version": "1.16",
+   "locale": "de_DE"
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": true
+ }
+}

@@ -1,0 +1,361 @@
+{
+ "{http://www.ebayclassifiedsgroup.com/schema/attribute/v1}attributes": {
+  "name": "{http://www.ebayclassifiedsgroup.com/schema/attribute/v1}attributes",
+  "declaredType": "com.ebay.ecg.api.spec.v1.schema.attribute.Attributes",
+  "scope": "jakarta.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+   "attribute": [
+    {
+     "supported-value": [
+      {
+       "value": "abarth",
+       "localized-label": "Abarth"
+      },
+      {
+       "value": "aixam",
+       "localized-label": "Aixam"
+      },
+      {
+       "value": "alfa_romeo",
+       "localized-label": "Alfa Romeo"
+      },
+      {
+       "value": "aston_martin",
+       "localized-label": "Aston Martin"
+      },
+      {
+       "value": "audi",
+       "localized-label": "Audi"
+      },
+      {
+       "value": "bentley",
+       "localized-label": "Bentley"
+      },
+      {
+       "value": "bmw",
+       "localized-label": "BMW"
+      },
+      {
+       "value": "byd",
+       "localized-label": "BYD"
+      }
+     ],
+     "range-value": {},
+     "hint-paragraphs": [],
+     "name": "autos.marke",
+     "unit": "",
+     "search-display": "false",
+     "dependent-name": "autos.model",
+     "fake-sub-category": "true",
+     "search-multi-select": "false",
+     "since": "1.0",
+     "deprecated": "false",
+     "search-param": "optional",
+     "search-style": "eq",
+     "read": "supported",
+     "write": "required",
+     "search-response-included": "unsupported",
+     "type": "ENUM",
+     "localized-label": "Marke"
+    },
+    {
+     "supported-value": [],
+     "suggested-value": [
+      {
+       "value": "5000"
+      },
+      {
+       "value": "10000"
+      },
+      {
+       "value": "20000"
+      },
+      {
+       "value": "30000"
+      },
+      {
+       "value": "40000"
+      },
+      {
+       "value": "50000"
+      },
+      {
+       "value": "60000"
+      },
+      {
+       "value": "70000"
+      },
+      {
+       "value": "80000"
+      },
+      {
+       "value": "90000"
+      },
+      {
+       "value": "100000"
+      },
+      {
+       "value": "125000"
+      },
+      {
+       "value": "150000"
+      }
+     ],
+     "range-value": {},
+     "name": "autos.km",
+     "unit": "km",
+     "search-display": "true",
+     "min-value": "0",
+     "max-value": "2000000",
+     "search-multi-select": "false",
+     "since": "1.0",
+     "deprecated": "false",
+     "search-param": "optional",
+     "search-style": "range",
+     "read": "supported",
+     "write": "required",
+     "search-response-included": "unsupported",
+     "type": "LONG",
+     "localized-label": "Kilometerstand"
+    },
+    {
+     "supported-value": [],
+     "suggested-value": [
+      {
+       "value": "2026"
+      },
+      {
+       "value": "2025"
+      },
+      {
+       "value": "2024"
+      },
+      {
+       "value": "2023"
+      },
+      {
+       "value": "2022"
+      },
+      {
+       "value": "2021"
+      },
+      {
+       "value": "2020"
+      },
+      {
+       "value": "2019"
+      },
+      {
+       "value": "2018"
+      },
+      {
+       "value": "2017"
+      },
+      {
+       "value": "2016"
+      },
+      {
+       "value": "2015"
+      },
+      {
+       "value": "2014"
+      },
+      {
+       "value": "2013"
+      },
+      {
+       "value": "2012"
+      },
+      {
+       "value": "2011"
+      },
+      {
+       "value": "2010"
+      },
+      {
+       "value": "2009"
+      },
+      {
+       "value": "2008"
+      },
+      {
+       "value": "2007"
+      },
+      {
+       "value": "2006"
+      },
+      {
+       "value": "2005"
+      },
+      {
+       "value": "2000"
+      },
+      {
+       "value": "1995"
+      },
+      {
+       "value": "1990"
+      },
+      {
+       "value": "1985"
+      },
+      {
+       "value": "1980"
+      },
+      {
+       "value": "1970"
+      },
+      {
+       "value": "1960"
+      },
+      {
+       "value": "1910"
+      }
+     ],
+     "range-value": {},
+     "name": "autos.ez",
+     "unit": "",
+     "search-display": "true",
+     "min-value": "1910",
+     "max-value": "2026",
+     "search-multi-select": "false",
+     "since": "1.0",
+     "deprecated": "false",
+     "search-param": "optional",
+     "search-style": "range",
+     "read": "supported",
+     "write": "required",
+     "search-response-included": "unsupported",
+     "type": "LONG",
+     "localized-label": "Erstzulassungsjahr"
+    },
+    {
+     "supported-value": [
+      {
+       "value": "1",
+       "localized-label": "01"
+      },
+      {
+       "value": "2",
+       "localized-label": "02"
+      },
+      {
+       "value": "3",
+       "localized-label": "03"
+      },
+      {
+       "value": "4",
+       "localized-label": "04"
+      },
+      {
+       "value": "5",
+       "localized-label": "05"
+      },
+      {
+       "value": "6",
+       "localized-label": "06"
+      },
+      {
+       "value": "7",
+       "localized-label": "07"
+      },
+      {
+       "value": "8",
+       "localized-label": "08"
+      }
+     ],
+     "range-value": {},
+     "hint-paragraphs": [],
+     "name": "autos.ezm",
+     "unit": "",
+     "search-display": "false",
+     "fake-sub-category": "false",
+     "search-multi-select": "false",
+     "render": "DROPDOWN",
+     "since": "1.0",
+     "deprecated": "false",
+     "search-param": "unsupported",
+     "read": "supported",
+     "write": "required",
+     "search-response-included": "unsupported",
+     "type": "ENUM",
+     "localized-label": "Erstzulassungsmonat"
+    },
+    {
+     "supported-value": [
+      {
+       "value": "benzin",
+       "localized-label": "Benzin"
+      },
+      {
+       "value": "diesel",
+       "localized-label": "Diesel"
+      },
+      {
+       "value": "cng",
+       "localized-label": "Erdgas (CNG)"
+      },
+      {
+       "value": "lpg",
+       "localized-label": "Autogas (LPG)"
+      },
+      {
+       "value": "hybrid",
+       "localized-label": "Hybrid"
+      },
+      {
+       "value": "elektro",
+       "localized-label": "Elektro"
+      },
+      {
+       "value": "andere",
+       "localized-label": "Andere Kraftstoffarten"
+      }
+     ],
+     "range-value": {},
+     "hint-paragraphs": [],
+     "name": "autos.fuel",
+     "unit": "",
+     "search-display": "false",
+     "fake-sub-category": "false",
+     "search-multi-select": "true",
+     "render": "DROPDOWN",
+     "since": "1.0",
+     "deprecated": "false",
+     "search-param": "optional",
+     "search-style": "eq",
+     "read": "supported",
+     "write": "optional",
+     "search-response-included": "unsupported",
+     "type": "ENUM",
+     "localized-label": "Kraftstoffart"
+    },
+    {
+     "supported-value": [],
+     "range-value": {},
+     "name": "autos.navi",
+     "unit": "",
+     "search-display": "false",
+     "search-multi-select": "false",
+     "group-name": "interior",
+     "group-localized-label": "Innenausstattung",
+     "since": "1.0",
+     "deprecated": "false",
+     "search-param": "optional",
+     "search-style": "eq",
+     "read": "supported",
+     "write": "optional",
+     "search-response-included": "unsupported",
+     "type": "BOOLEAN",
+     "localized-label": "Navigationssystem"
+    }
+   ],
+   "version": "1.16",
+   "locale": "de_DE",
+   "supported-locales": "de"
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": true
+ }
+}

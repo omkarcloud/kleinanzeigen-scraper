@@ -1,0 +1,58 @@
+{
+ "id": "131267961",
+ "userSince": "2023-06-16T13:34:49.000+0200",
+ "contactName": "Privat",
+ "posterType": "PRIVATE",
+ "initials": "P",
+ "counters": {
+  "historicalAds": 122,
+  "onlineAds": 5,
+  "followers": 13
+ },
+ "replyIndicators": {
+  "replySpeed": "10min"
+ },
+ "userBadges": {
+  "badges": [
+   {
+    "name": "rating",
+    "level": 2,
+    "value": ""
+   },
+   {
+    "name": "friendliness",
+    "level": 1,
+    "value": ""
+   },
+   {
+    "name": "reliability",
+    "level": 1,
+    "value": ""
+   },
+   {
+    "name": "replyRate",
+    "level": 1,
+    "value": "80%"
+   },
+   {
+    "name": "replySpeed",
+    "level": 2,
+    "value": "10min"
+   },
+   {
+    "name": "followers",
+    "level": 1,
+    "value": "13"
+   }
+  ]
+ },
+ "userRatings": {
+  "averageRating": 0.6764705882352942
+ },
+ "securePayment": false,
+ "sellerAccountType": "private",
+ "tracking": {
+  "userAccountType": "private",
+  "encryptedSellerId": "2533da2d04964a4345e22dcffb9603fe"
+ }
+}

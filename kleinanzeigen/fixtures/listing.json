@@ -1,0 +1,472 @@
+{
+ "{http://www.ebayclassifiedsgroup.com/schema/ad/v1}ad": {
+  "name": "{http://www.ebayclassifiedsgroup.com/schema/ad/v1}ad",
+  "declaredType": "com.ebay.ecg.api.spec.v1.schema.ad.Ad",
+  "scope": "jakarta.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+   "price": {
+    "currency-iso-code": {
+     "value": {
+      "value": "EUR",
+      "localized-label": "€"
+     }
+    },
+    "amount": {
+     "value": 14.0
+    },
+    "range-amount": {},
+    "price-type": {
+     "value": "SPECIFIED_AMOUNT"
+    }
+   },
+   "ad-type": {
+    "value": "OFFERED"
+   },
+   "poster-type": {
+    "value": "COMMERCIAL"
+   },
+   "title": {
+    "value": "Fahrrad-Abonnement Berlin: Damenfahrrad und Herrenfahrrad"
+   },
+   "description": {
+    "value": "Schloss inklusive, viele Fahrradmodelle zur Auswahl, Wartung komplett inklusive, nachhaltige, aufbereitete Fahrräder statt Neukauf.\nDieses Fahrrad ist nur im Abonnement erhältlich.\nEs steht nicht zum Verkauf, sondern wird monatlich vermietet, inklusive Reparaturen und Diebstahlschutz.\n\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n\nWeitere Informationen finden Sie unter dem folgenden Link:\n➡️\nhttps:&#x2F;&#x2F;recyclies.com&#x2F;collections&#x2F;all?utm_source=kleinanzeigen&utm_medium=kleinanzeigen\n⬅️\n➡️ (kopieren Sie den Link einfach in die URL Zeile Ihres Browsers) ⬅️\n\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\nFahrrad-Abonnement Berlin: Damenfahrrad und Herrenfahrrad"
+   },
+   "description-content-type": {
+    "value": "text/plain"
+   },
+   "description-content-type-version": {
+    "value": "0"
+   },
+   "imprint": {
+    "value": "Anschrift\r\n**www.Recyclies.com**\r\nMehringdamm 27\r\n10961 Berlin\r\nDeutschland\r\ncontact@recyclies.com\r\n\r\nUmsatzsteuer-Identifikationsnummer: \r\n14/450/04051\r\n\r\nManagement\r\nAzur Muharemovic\r\n\r\nKontakt:\r\nE-Mail-Adresse: contact@recyclies.com\r\nWebseite: **www.recyclies.com**"
+   },
+   "ad-address": {
+    "street": {
+     "value": ""
+    },
+    "state": {
+     "value": "Kreuzberg"
+    },
+    "zip-code": {
+     "value": "10961"
+    },
+    "longitude": {
+     "value": "13.396583"
+    },
+    "latitude": {
+     "value": "52.49243"
+    },
+    "radius": {
+     "value": "0.66"
+    },
+    "availability-radius-in-km": {}
+   },
+   "ad-status": {
+    "value": "ACTIVE"
+   },
+   "contact-name": {
+    "value": "Lina"
+   },
+   "contact-name-initials": {
+    "value": "L"
+   },
+   "user-id": {
+    "value": "133032271"
+   },
+   "store-id": {},
+   "seller-account-type": {
+    "value": "COMMERCIAL"
+   },
+   "user-rating": {
+    "averageRating": {
+     "value": 0.7
+    }
+   },
+   "userBadges": {
+    "badges": [
+     {
+      "name": "rating",
+      "level": "2",
+      "value": ""
+     },
+     {
+      "name": "friendliness",
+      "level": "0",
+      "value": ""
+     },
+     {
+      "name": "reliability",
+      "level": "0",
+      "value": ""
+     }
+    ]
+   },
+   "placeholder-image-present": {
+    "value": "false"
+   },
+   "ad-source-id": {},
+   "ad-external-reference-id": {},
+   "phone": {},
+   "originId": {
+    "value": "0"
+   },
+   "start-date-time": {
+    "value": "2026-08-19T09:07:13.000+0200"
+   },
+   "user-since-date-time": {
+    "value": "2023-08-19T17:08:19.000+0200"
+   },
+   "last-user-edit-date": {
+    "value": "2026-06-20T08:51:06.000+0200"
+   },
+   "features-active": {
+    "feature-active": [
+     {
+      "name": "TOPAD",
+      "display": "true"
+     }
+    ]
+   },
+   "category": {
+    "id-name": {
+     "value": "Fahrraeder"
+    },
+    "localized-name": {
+     "value": "Fahrräder & Zubehör"
+    },
+    "link": [],
+    "category": [],
+    "parent-id": {
+     "value": "210"
+    },
+    "has-fake-sub-category": {
+     "value": "true"
+    },
+    "id": "217"
+   },
+   "locations": {
+    "location": [
+     {
+      "id-name": {
+       "value": "10961"
+      },
+      "localized-name": {
+       "value": "10961 Kreuzberg"
+      },
+      "longitude": {
+       "value": "13.396583"
+      },
+      "latitude": {
+       "value": "52.49243"
+      },
+      "radius": {
+       "value": "0.66"
+      },
+      "regions": {
+       "region": [
+        {
+         "localized-name": {
+          "value": "Berlin"
+         }
+        }
+       ],
+       "localized-label": "Bundesland"
+      },
+      "location": [],
+      "parent-id": {
+       "value": "3375"
+      },
+      "children-count": {
+       "value": "0"
+      },
+      "id": "3377"
+     }
+    ]
+   },
+   "buy-now": {
+    "selected": "false"
+   },
+   "attributes": {
+    "attribute": [
+     {
+      "value": [
+       {
+        "value": "damen",
+        "localized-label": "Damen"
+       }
+      ],
+      "range-value": {},
+      "name": "fahrraeder.art",
+      "unit": "",
+      "search-display": "false",
+      "fake-sub-category": "true",
+      "search-multi-select": "true",
+      "type": "ENUM",
+      "localized-label": "Art"
+     },
+     {
+      "value": [
+       {
+        "value": "nein",
+        "localized-label": "Nur Abholung"
+       }
+      ],
+      "range-value": {},
+      "name": "fahrraeder.versand",
+      "unit": "",
+      "search-display": "true",
+      "fake-sub-category": "false",
+      "search-multi-select": "false",
+      "localized-tag": "Versand möglich",
+      "type": "ENUM",
+      "localized-label": "Versand"
+     },
+     {
+      "value": [
+       {
+        "value": "city",
+        "localized-label": "Cityräder"
+       }
+      ],
+      "range-value": {},
+      "name": "fahrraeder.type",
+      "unit": "",
+      "search-display": "false",
+      "fake-sub-category": "false",
+      "search-multi-select": "true",
+      "type": "ENUM",
+      "localized-label": "Typ"
+     }
+    ]
+   },
+   "link": [
+    {
+     "href": "https://api.kleinanzeigen.de/api/ads/3439651996",
+     "rel": "self"
+    },
+    {
+     "href": "https://api.kleinanzeigen.de/api/users/133032271/ads/3439651996",
+     "rel": "self-user"
+    },
+    {
+     "href": "https://www.kleinanzeigen.de/s-anzeige/fahrrad-abonnement-berlin-damenfahrrad-und-herrenfahrrad/3439651996-217-3377",
+     "rel": "self-public-website"
+    }
+   ],
+   "pictures": {
+    "picture": [
+     {
+      "link": [
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffadac4e-3c35-4223-a388-f68429570555?rule=$_0.JPG",
+        "rel": "thumbnail"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffadac4e-3c35-4223-a388-f68429570555?rule=$_2.JPG",
+        "rel": "teaser"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffadac4e-3c35-4223-a388-f68429570555?rule=$_1.JPG",
+        "rel": "large"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffadac4e-3c35-4223-a388-f68429570555?rule=$_59.JPG",
+        "rel": "extraLarge"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffadac4e-3c35-4223-a388-f68429570555?rule=$_57.JPG",
+        "rel": "XXL"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffadac4e-3c35-4223-a388-f68429570555?rule=$_{imageId}.JPG",
+        "rel": "canonicalUrl"
+       }
+      ],
+      "tags": {}
+     },
+     {
+      "link": [
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05156d10-0f19-4b39-9d3e-9d9cd39138f4?rule=$_0.JPG",
+        "rel": "thumbnail"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05156d10-0f19-4b39-9d3e-9d9cd39138f4?rule=$_2.JPG",
+        "rel": "teaser"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05156d10-0f19-4b39-9d3e-9d9cd39138f4?rule=$_1.JPG",
+        "rel": "large"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05156d10-0f19-4b39-9d3e-9d9cd39138f4?rule=$_59.JPG",
+        "rel": "extraLarge"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05156d10-0f19-4b39-9d3e-9d9cd39138f4?rule=$_57.JPG",
+        "rel": "XXL"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05156d10-0f19-4b39-9d3e-9d9cd39138f4?rule=$_{imageId}.JPG",
+        "rel": "canonicalUrl"
+       }
+      ],
+      "tags": {}
+     },
+     {
+      "link": [
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad0b4873-c8d9-407c-bbdf-024957fc180a?rule=$_0.JPG",
+        "rel": "thumbnail"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad0b4873-c8d9-407c-bbdf-024957fc180a?rule=$_2.JPG",
+        "rel": "teaser"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad0b4873-c8d9-407c-bbdf-024957fc180a?rule=$_1.JPG",
+        "rel": "large"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad0b4873-c8d9-407c-bbdf-024957fc180a?rule=$_59.JPG",
+        "rel": "extraLarge"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad0b4873-c8d9-407c-bbdf-024957fc180a?rule=$_57.JPG",
+        "rel": "XXL"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad0b4873-c8d9-407c-bbdf-024957fc180a?rule=$_{imageId}.JPG",
+        "rel": "canonicalUrl"
+       }
+      ],
+      "tags": {}
+     },
+     {
+      "link": [
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aab0d8ab-3e7e-482a-bee0-cde48a7ede4f?rule=$_0.JPG",
+        "rel": "thumbnail"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aab0d8ab-3e7e-482a-bee0-cde48a7ede4f?rule=$_2.JPG",
+        "rel": "teaser"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aab0d8ab-3e7e-482a-bee0-cde48a7ede4f?rule=$_1.JPG",
+        "rel": "large"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aab0d8ab-3e7e-482a-bee0-cde48a7ede4f?rule=$_59.JPG",
+        "rel": "extraLarge"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aab0d8ab-3e7e-482a-bee0-cde48a7ede4f?rule=$_57.JPG",
+        "rel": "XXL"
+       },
+       {
+        "href": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aab0d8ab-3e7e-482a-bee0-cde48a7ede4f?rule=$_{imageId}.JPG",
+        "rel": "canonicalUrl"
+       }
+      ],
+      "tags": {}
+     }
+    ]
+   },
+   "documents": {
+    "document": []
+   },
+   "displayoptions": {
+    "reduced-ads-on-vip": {
+     "value": "false"
+    },
+    "hide-ads-on-vip": {
+     "value": "false"
+    },
+    "show-ratings": {
+     "value": "true"
+    },
+    "ad-flagging-enabled": {
+     "value": "true"
+    },
+    "hide-similard-ads-on-vip": {
+     "value": "false"
+    },
+    "category-change-allowed": {
+     "value": "false"
+    },
+    "offer-allowed": {
+     "value": "false"
+    },
+    "secure-payment-possible": {
+     "value": "false"
+    },
+    "ad-description-formatting-enabled": {
+     "value": "false"
+    },
+    "ad-documents-upload-enabled": {
+     "value": "false"
+    },
+    "display-map-on-vip": {
+     "value": "false"
+    },
+    "licence-plate-blurring-enabled": {
+     "value": "false"
+    },
+    "contact-poster-feedback": "",
+    "lead-generation-target": {
+     "value": "false"
+    },
+    "enable-image-titles": {
+     "value": "false"
+    },
+    "eligible-for-call-tracking": {
+     "value": "false"
+    },
+    "contact-button-on-vip": {
+     "value": "true",
+     "action": {
+      "type": "Conversation",
+      "data": ""
+     }
+    },
+    "vip-type": "VIP",
+    "is-new-construction": {
+     "value": "false"
+    },
+    "show-other-projects": {
+     "value": "false"
+    },
+    "show-collage": {
+     "value": "false"
+    },
+    "show-company-logo": {
+     "value": "false"
+    }
+   },
+   "tracking": {
+    "user-account-type": {
+     "value": "unknown"
+    }
+   },
+   "medias": {
+    "media": []
+   },
+   "financing-provider": {},
+   "financing-details": {},
+   "financing-eligible": {
+    "value": "false"
+   },
+   "re-financing-eligible": {
+    "value": "false"
+   },
+   "otherAttributes": {},
+   "id": "3439651996",
+   "version": "1.16",
+   "locale": "de_DE"
+  },
+  "nil": false,
+  "typeSubstituted": true,
+  "globalScope": true
+ }
+}
