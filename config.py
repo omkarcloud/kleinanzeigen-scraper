@@ -31,3 +31,11 @@ KLEINANZEIGEN_ROTATE_ATTEMPTS = 2        # extra tries on a 403 / 429 when a pro
 
 def kleinanzeigen_proxy():
     return os.environ.get("KLEINANZEIGEN_PROXY") or None
+
+
+# ---- added by the sync: defaults for a direct run ----
+KLEINANZEIGEN_GATEWAY_FAILURES = 3
+KLEINANZEIGEN_GATEWAY_PAUSE = 300
+def kleinanzeigen_gateway_exit():
+    return None
+

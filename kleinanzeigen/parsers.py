@@ -29,6 +29,8 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
 from kleinanzeigen import refs
+from scraper_utils.values import as_dict as node
+from scraper_utils.dates import iso_day as iso_date
 
 IMAGE_RULE_LARGE = "57"       # XXL, the largest rendition the site serves
 IMAGE_RULE_THUMB = "2"        # teaser
@@ -123,10 +125,6 @@ def as_list(value):
     return []
 
 
-def node(value):
-    return value if isinstance(value, dict) else {}
-
-
 def iso_utc(value):
     """'2026-10-05T11:48:12.000+0200' -> '2026-10-05T09:48:12Z'."""
     raw = text(value)
@@ -138,13 +136,6 @@ def iso_utc(value):
         except ValueError:
             continue
     return None
-
-
-def iso_date(value):
-    """Datetime string -> 'YYYY-MM-DD' in the site's own (German) calendar day."""
-    raw = text(value)
-    m = re.match(r"(\d{4}-\d{2}-\d{2})", raw or "")
-    return m.group(1) if m else None
 
 
 def plain_text(value):

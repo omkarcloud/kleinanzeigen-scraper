@@ -32,6 +32,14 @@ every session runs through ONE sticky config.KLEINANZEIGEN_PROXY_COUNTRY
 exit shared by the process, rotated after KLEINANZEIGEN_REQUESTS_PER_EXIT
 requests, on a ban, and on a transport error.
 
+Since 2026-11-11 every call is tried ONCE through the gateway exit first
+(config.KLEINANZEIGEN_GATEWAY_EXIT = "gateway:de", Frankfurt; _gateway_once):
+the gateway's ranges are not banned — 181 of 181 requests on the three hosts
+answered there, a 6-wide burst of 147 included (numbers in the config
+block). A fresh gateway address per request and no cookies kept. A ban, a 5xx
+or a transport error there falls through to the residential exit above,
+unchanged; a run of failures pauses the gateway (_gateway_result).
+
 Trap: the search API sometimes answers 200 with numFound 0 for a query that
 has results (seen in streaks on one exit). search() callers pass
 `retry_empty=True`, which repeats an empty answer once on a fresh exit.
@@ -47,12 +55,15 @@ import os
 import sys
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait as wait_futures
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import config
+import egress
+import identity_pool
 from scraper_errors import BadRequest, Blocked, NotFound, UpstreamError
+from scraper_utils import debug, fanout, sessions
 
 API = "https://api.kleinanzeigen.de/api"
 SITE = "https://www.kleinanzeigen.de"
@@ -67,11 +78,11 @@ API_HEADERS = {
     "authorization": "Basic YW5kcm9pZDpUYVI2MHBFdHRZ",
     "user-agent": "okhttp/4.10.0",
     "accept": "application/json",
-    "accept-language": "de-DE",
+    "accept-language": egress.site_accept_language("kleinanzeigen"),
 }
 HTML_HEADERS = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "accept-language": "de-DE,de;q=0.9",
+    "accept-language": egress.site_accept_language("kleinanzeigen"),
 }
 # Search-box Algolia index; refreshed from the homepage when the key is refused.
 SUGGEST_DEFAULTS = {"index": "ebayk_prod_suggest", "app_id": "8YS7J0Y0H2",
@@ -100,6 +111,15 @@ class KleinanzeigenNotFound(NotFound):
 _egress_lock = threading.Lock()
 _egress = {"proxy": None, "ready": False, "version": 0, "requests": 0}
 _local = threading.local()
+# The gateway exit in front of that exit (config.KLEINANZEIGEN_GATEWAY_EXIT,
+# 2026-11-11): each call is tried there ONCE, from a fresh gateway address and
+# with no cookies; a ban, a transport error or a 5xx there sends the rest of
+# the call to the sticky residential exit, exactly as before the gateway.
+# KLEINANZEIGEN_GATEWAY_FAILURES failures in a row (process-wide: the site
+# bans whole ranges) pause it for KLEINANZEIGEN_GATEWAY_PAUSE seconds, so a
+# banned gateway range costs a few wasted requests, not one per call.
+_new_session = egress.new_session       # the egress MODULE's: egress() below rebinds the name
+_gateway = {"failures": 0, "paused_until": 0.0}
 
 
 def egress():
@@ -142,25 +162,82 @@ def _session():
 
 
 def _drop_session():
-    sess = getattr(_local, "session", None)
-    _local.session = None
-    if sess is not None:
-        try:
-            sess.close()
-        except Exception:
-            pass
+    sessions.drop(_local)
+
+
+def _gateway_exit():
+    """'gateway:de' when a call may try the gateway exit now; None when no
+    gateway is configured or it is paused after a run of failures."""
+    exit = config.kleinanzeigen_gateway_exit()
+    if not exit:
+        return None
+    with _egress_lock:
+        if time.monotonic() < _gateway["paused_until"]:
+            return None
+    return exit
+
+
+def _gateway_result(ok, why=""):
+    """Count one gateway answer: a usable one clears the run of failures,
+    the KLEINANZEIGEN_GATEWAY_FAILURES-th failure in a row pauses it."""
+    with _egress_lock:
+        if ok:
+            _gateway["failures"] = 0
+            return
+        _gateway["failures"] += 1
+        if _gateway["failures"] < config.KLEINANZEIGEN_GATEWAY_FAILURES:
+            return
+        _gateway["failures"] = 0
+        _gateway["paused_until"] = time.monotonic() + config.KLEINANZEIGEN_GATEWAY_PAUSE
+    print(f"kleinanzeigen: {config.KLEINANZEIGEN_GATEWAY_FAILURES} failures in a row on the gateway exit "
+          f"(last: {why}); residential exit only for {config.KLEINANZEIGEN_GATEWAY_PAUSE} s")
+
+
+def _drop_gateway_session():
+    sess = getattr(_local, "gateway", None)
+    _local.gateway = None
+    sessions.close_quietly(sess)
+
+
+def _gateway_once(method, url, params, headers, body, exit):
+    """ONE try through the gateway exit -> the response (any status below
+    500 that is not a ban), or None when the gateway failed, the address
+    was banned / rate limited or the site answered 5xx: the caller goes on
+    with the residential exit."""
+    _local.via_gateway = True
+    sess = getattr(_local, "gateway", None)
+    try:
+        if sess is None:
+            sess = _local.gateway = _new_session(exit, impersonate=IMPERSONATE)
+        if method == "POST":
+            resp = sess.post(url, params=params, headers=headers, json=body, timeout=TIMEOUT)
+        else:
+            resp = sess.get(url, params=params, headers=headers, timeout=TIMEOUT)
+        # every request leaves from another gateway address: Akamai's bm_sz /
+        # _abck from the previous address must not travel with the next one
+        sess.cookies.clear()
+    except Exception as e:
+        _drop_gateway_session()
+        why = f"{type(e).__name__}: {e}"
+    else:
+        if 300 <= resp.status_code < 400:
+            # a redirect the gateway does not follow (another site, http://, too
+            # many hops): not an answer and not a gateway failure; the
+            # residential exit's curl follows it
+            return None
+        if not looks_banned(resp) and resp.status_code < 500:
+            _gateway_result(True)
+            return resp
+        dump_debug("gateway_banned" if looks_banned(resp) else "gateway_error", resp.text)
+        why = f"HTTP {resp.status_code}"
+    print(f"kleinanzeigen: gateway exit ({exit}) failed on {url}, residential exit next: {why}"[:300])
+    _gateway_result(False, why)
+    return None
 
 
 def dump_debug(name, text):
     """Write a raw response to $KLEINANZEIGEN_DEBUG_DIR/<name>.txt."""
-    dbg = os.environ.get("KLEINANZEIGEN_DEBUG_DIR", "")
-    if dbg and text:
-        try:
-            os.makedirs(dbg, exist_ok=True)
-            with open(os.path.join(dbg, name + ".txt"), "w", encoding="utf-8") as f:
-                f.write(text)
-        except OSError:
-            pass
+    debug.dump("KLEINANZEIGEN_DEBUG_DIR", name, text, encoding="utf-8")
 
 
 def looks_banned(resp):
@@ -172,6 +249,7 @@ def looks_banned(resp):
 # ---- requests ---------------------------------------------------------------------
 
 def _once(method, url, params, headers, body):
+    _local.via_gateway = False
     sess, version = _session()
     try:
         if method == "POST":
@@ -194,15 +272,23 @@ def request(url, params=None, *, headers=None, method="GET", body=None, label=No
     """One call -> the curl response (2xx). 404 raises KleinanzeigenNotFound,
     400 KleinanzeigenBadRequest; a ban rotates the exit (up to
     config.KLEINANZEIGEN_ROTATE_ATTEMPTS fresh exits); 5xx / transport
-    errors retry with backoff."""
+    errors retry with backoff. With config.KLEINANZEIGEN_GATEWAY_EXIT the
+    gateway exit gets one try first; that try costs no attempt and no
+    rotation, so a failure there leaves the residential path whole."""
     label = label or url
     params = {k: v for k, v in (params or {}).items() if v not in (None, "")}
     last = None
     bans = 0
     attempt = 0
+    gateway = _gateway_exit()
     while attempt < config.MAX_RETRIES:
         try:
-            resp = _once(method, url, params, headers, body)
+            if gateway:
+                resp, gateway = _gateway_once(method, url, params, headers, body, gateway), None
+                if resp is None:
+                    continue                # the residential exit, as before the gateway
+            else:
+                resp = _once(method, url, params, headers, body)
         except KleinanzeigenUpstreamError as e:
             last = e
         else:
@@ -254,8 +340,9 @@ def search(params, *, label="search", retry_empty=True):
     API intermittently reports numFound 0 for queries that do have results."""
     data = api("ads.json", params, label=label)
     if retry_empty and _found(data) == 0:
-        _drop_session()
-        rotate_egress()
+        if not getattr(_local, "via_gateway", False):     # the gateway's next request is a fresh address anyway
+            _drop_session()
+            rotate_egress()
         try:
             again = api("ads.json", params, label=label)
         except (UpstreamError, BadRequest, NotFound):
@@ -271,33 +358,57 @@ def site_html(path, params=None, *, label=None, missing=None):
 
 
 # ---- search-box suggestions (Algolia) ------------------------------------------------
+# The {index, app_id, api_key} dict lives in a shared identity_pool seeded
+# with SUGGEST_DEFAULTS (replaced the `_suggest` dict + lock on 2026-11-09):
+# a 4xx wave across the 64 request threads costs ONE homepage read, the
+# other threads get the winner's config, and a second refresh inside
+# SUGGEST_REFRESH_INTERVAL returns the same config (the request then fails
+# as it did before).
+SUGGEST_REFRESH_INTERVAL = 30    # seconds between two homepage re-reads
 
-_suggest = dict(SUGGEST_DEFAULTS)
-_suggest_lock = threading.Lock()
+
+class _NoSuggestConfig(Exception):
+    """The homepage carries no complete Algolia config (not a transport error)."""
 
 
-def _refresh_suggest_config():
-    """Re-read the Algolia index / app id / key from the homepage."""
+def _mint_suggest_config(key, hint):
+    """The pool's mint: the Algolia index / app id / key from the homepage's
+    data-algolia-* attributes. Transport errors propagate as before;
+    _NoSuggestConfig when the page lacks one of the three."""
     import re
     markup = site_html("/", label="homepage")
     found = {}
-    for key, attr in (("index", "data-algolia-index"), ("app_id", "data-algolia-app-id"),
-                      ("api_key", "data-algolia-api-key")):
+    for name, attr in (("index", "data-algolia-index"), ("app_id", "data-algolia-app-id"),
+                       ("api_key", "data-algolia-api-key")):
         m = re.search(attr + r'="([^"]+)"', markup)
         if m:
-            found[key] = m.group(1)
-    if len(found) == 3:
-        with _suggest_lock:
-            _suggest.update(found)
-        return True
-    return False
+            found[name] = m.group(1)
+    if len(found) != 3:
+        raise _NoSuggestConfig()
+    return found
+
+
+_suggest = identity_pool.Pool("kleinanzeigen-suggest", _mint_suggest_config,
+                              min_interval=SUGGEST_REFRESH_INTERVAL, seed={"": dict(SUGGEST_DEFAULTS)})
+
+
+def _refresh_suggest_config(used):
+    """`used` (the pool identity whose config just got a 4xx) is stale: ask
+    the pool for its replacement. True when a different config is now
+    current (retry with it); False when it is unchanged (throttled, or the
+    page carries the same values / none). Transport errors propagate."""
+    try:
+        fresh = _suggest.get(replace=used)
+    except _NoSuggestConfig:
+        return False
+    return fresh.value != used.value
 
 
 def suggest(query, limit):
     """Search-box completions -> the Algolia answer (dict with `hits`)."""
     for attempt in (1, 2):
-        with _suggest_lock:
-            cfg = dict(_suggest)
+        used = _suggest.get()
+        cfg = used.value
         headers = {"x-algolia-application-id": cfg["app_id"], "x-algolia-api-key": cfg["api_key"],
                    "content-type": "application/json", "origin": SITE, "referer": SITE + "/"}
         try:
@@ -306,13 +417,31 @@ def suggest(query, limit):
             return resp.json()
         except (KleinanzeigenBadRequest, KleinanzeigenNotFound):
             # a rotated key / index answers 4xx: re-read it from the page once
-            if attempt == 2 or not _refresh_suggest_config():
+            if attempt == 2 or not _refresh_suggest_config(used):
                 raise KleinanzeigenUpstreamError("suggestions: the search-box index refused the request")
         except ValueError:
             raise KleinanzeigenUpstreamError("suggestions returned a non-JSON body")
 
 
 # ---- parallel fan-out ---------------------------------------------------------------
+
+# Long-lived pools (2026-10-23): their threads keep their thread-local curl
+# sessions — and the sticky exits behind them — between requests. The
+# per-call executor they replace opened fresh sessions/exits for every
+# fan-out and threw them away when the call returned. Two levels: a fan-out
+# running inside a fan-out goes to the second pool, so it neither waits on
+# the workers it occupies (deadlock) nor loses its parallelism; a third
+# level runs inline.
+_pools = (ThreadPoolExecutor(max_workers=FANOUT_WORKERS * 4, thread_name_prefix="kleinanzeigen-fanout-0"),
+          ThreadPoolExecutor(max_workers=FANOUT_WORKERS * 4, thread_name_prefix="kleinanzeigen-fanout-1"))
+
+
+def _windowed(fns, workers):
+    """Run `fns` on the pool for this nesting level, at most `workers` at a
+    time; results align with `fns`. The first failure (in `fns` order)
+    propagates once the callables already started have finished."""
+    return fanout.windowed(_pools, "kleinanzeigen-fanout", fns, workers)
+
 
 def run_parallel(fns, workers=FANOUT_WORKERS):
     """Run zero-arg callables in parallel; results align with `fns`.
@@ -321,9 +450,7 @@ def run_parallel(fns, workers=FANOUT_WORKERS):
         return []
     if len(fns) == 1:
         return [fns[0]()]
-    with ThreadPoolExecutor(max_workers=min(workers, len(fns))) as ex:
-        futures = [ex.submit(fn) for fn in fns]
-        return [f.result() for f in futures]
+    return _windowed(fns, workers)
 
 
 def run_parallel_quiet(fns, workers=FANOUT_WORKERS):
